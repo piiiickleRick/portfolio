@@ -1,0 +1,86 @@
+/*=====CSS for Dropdown Menus=====*/
+
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #0088ce;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@keyframes fadeMe {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    border-radius: 1%;
+    background-color: rgb(106, 14, 241);
+  }
+  100% {
+    opacity: 1;
+    background-color:rgb(173, 0, 120);
+  }
+}
+
+
+
+.animate-me {
+  animation: fadeMe 5s infinite ease-in-out;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(53, 203, 236);
+  margin: 10em auto;
+  box-shadow: 5px 5px 4px black;
+
+
+}
